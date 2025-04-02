@@ -1,6 +1,6 @@
 const themes = {
   fruits: ['apple.jpg', 'banana.jpg', 'grapes.jpg', 'watermelon.jpg', 'cherry.jpg', 'pineapple.jpg', 'strawberry.jpg', 'orange.jpg'],
-  flowers: ['rose.jpg', 'tulip.jpg', 'lily.jpg', 'sunflower.jpg', 'adenium.jpg', 'dandelion.jpg', 'plumeria.jpg', 'lotus.jpg'],
+  flowers: ['rose.jpg', 'tulip.jpg', 'lily.jpg', 'sunflower.jpg', 'adenium.jpg', 'dandalion.jpg', 'plumeria.jpg', 'lotus.jpg'],
   fish: ['blue.jpg', 'butterfly.jpg', 'clownfish.jpg', 'elegant.jpg', 'idol.jpg', 'lionfish.jpg', 'orental.jpg', 'fighter.jpg']
 };
 
