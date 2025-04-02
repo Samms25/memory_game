@@ -1,0 +1,154 @@
+:root {
+  --bg-image: url('images/memory_back.jpg'); /* Default background image */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: var(--bg-image); /* Default background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  color: #fff; /* Text color */
+}
+
+/* Home Page Styles */
+.home-container {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  color: black; /* Text color in home container */
+  backdrop-filter: blur(10px); /* Optional: adds a blur effect on the background */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+select, button {
+  font-size: 1.2em;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  padding: 15px 30px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Game Page Styles */
+.game-container {
+  width: 80%;
+  max-width: 800px;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #ffd700; /* Bright yellow color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Card grow effect on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.card.flipped img {
+  display: block;
+}
+
+.card.flipped {
+  background-color: #fff;
+}
+
+.game-info {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #ff6347; /* Tomato red color for text */
+}
+
+.congratulations {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+.congratulations h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #32cd32; /* Lime Green for "Congratulations!" text */
+}
+
+.congratulations p {
+  font-size: 1.2em;
+}
+
+/* Theme-based Backgrounds */
+.fruits-theme {
+  background-image: url('images/background.jpg');
+}
+
+.flowers-theme {
+  background-image: url('images/flower_background.jpg');
+}
+
+.fish-theme {
+  background-image: url('images/fish_background.jpg');
+}
+
+.fruits-theme, .flowers-theme, .fish-theme {
+  background-size: cover;
+  background-position: center;
+}

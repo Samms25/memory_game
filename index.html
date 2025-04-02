@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home-container">
+        <h1>Welcome to Memory Card Game</h1>
+        <p>Select the card theme:</p>
+        <select id="themeSelect">
+            <option value="fruits">Fruits</option>
+            <option value="flowers">Flowers</option>
+            <option value="fish">Fishes</option>
+        </select>
+        <button id="startButton">Start Game</button>
+    </div>
+
+    <script>
+        document.getElementById("startButton").addEventListener("click", function() {
+            const theme = document.getElementById("themeSelect").value;
+            localStorage.setItem("selectedTheme", theme);
+            window.location.href = "game.html"; // Redirect to game page
+        });
+    </script>
+</body>
+</html>
